@@ -4,6 +4,7 @@ let slides = [{
   id: 0,
   name: 'Dataless Network',
   content: 'Fist fighting'
+  //TODO: Remove this long string.
 },
 {
   id: 1,
@@ -170,7 +171,7 @@ slides.forEach(function (slideProperties) {
   slide.color = 'fff';
   slide.addText(slideProperties.name, {
     x: 0.3,
-    y: 0.5,
+    y: 1,
     h: 0.3,
     lineSpacing: 9,
     fontSize: 28,
@@ -179,12 +180,12 @@ slides.forEach(function (slideProperties) {
   });
   slide.addText(slideProperties.content, {
     x: 0.45,
-    y: 1,
+    y: 1.6,
     h: 0.3,
-    lineSpacing: 9,
+    lineSpacing: 24,
     fontSize: 20,
     fontFace: 'Arial',
-    w: 13
+    w: 10
   });
 
 });
